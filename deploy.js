@@ -3,10 +3,13 @@ const Web3 = require("web3");
 const { interface, bytecode } = require("./compile");
 require("dotenv").config();
 
+// connect to an account - setup the provider
 const provider = new HDWalletProvider(process.env.SECRET, process.env.KEY);
 
+// pass the provider to web3
 const web3 = new Web3(provider);
 
+// write deploy function and call it after in order to use async - await
 const deploy = async () => {
   const accounts = await web3.eth.getAccounts();
 
@@ -23,4 +26,5 @@ const deploy = async () => {
 
   console.log("Contracrt deployed to ", result.options.address);
 };
+
 deploy();
