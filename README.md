@@ -1,4 +1,5 @@
 # inbox
 
-cd inbox 
-node deploy.js
+```cd inbox```
+
+```node deploy.js```
