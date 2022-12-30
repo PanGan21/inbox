@@ -19,7 +19,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "ganache-cli": "^6.8.1",
-    "mocha": "^7.0.0",
+    "mocha": "^10.2.0",
     "solc": "^0.4.17",
     "truffle-hdwallet-provider": "^1.0.17",
     "web3": "^1.0.0-beta.26"
